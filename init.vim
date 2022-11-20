@@ -8,6 +8,7 @@
 :set mouse=a
 :set hidden
 :set incsearch
+set clipboard=unnamedplus
 call plug#begin('~/.config/nvim/plugged')
 
 
@@ -46,3 +47,5 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 let g:AutoPairsFlyMode = 1
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+let g:coc_global_extensions = ['coc-java']
